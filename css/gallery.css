@@ -1,0 +1,206 @@
+.gallery {
+  position: relative;
+  height: 100%;
+}
+
+.my-gallery {
+  position: relative;
+  height: 100%;
+}
+
+.my-gallery figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.my-gallery figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.4rem;
+  z-index: 1;
+}
+
+.my-gallery figure figcaption h4 {
+  color: var(--white);
+}
+
+.my-gallery figure figcaption h4 {
+  opacity: 0;
+}
+
+.my-gallery figure figcaption h4 small {
+  opacity: 0;
+}
+
+.my-gallery figure figcaption p {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .my-gallery figure {
+    height: 50%;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.8s;
+    transition: -webkit-transform 0.8s;
+    -o-transition: transform 0.8s;
+    -moz-transition: transform 0.8s, -moz-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s, -moz-transform 0.8s;
+  }
+  .my-gallery figure img {
+    width: auto;
+    height: 100%;
+  }
+  .my-gallery figure .works-image {
+    opacity: 0;
+  }
+  .my-gallery figure .works-link {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .my-gallery figure .works-link .picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+  }
+  .my-gallery figure .works-link .picture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    -moz-transition: transform 0.5s, -moz-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s, -moz-transform 0.5s;
+  }
+  .my-gallery figure figcaption {
+    background: none;
+  }
+  .my-gallery figure figcaption h4 {
+    opacity: 0;
+  }
+  .my-gallery figure figcaption h4 small {
+    opacity: 0;
+  }
+  .no-touch .my-gallery figure:hover {
+    -webkit-transform: scale(0.94);
+    -moz-transform: scale(0.94);
+    -ms-transform: scale(0.94);
+    transform: scale(0.94);
+  }
+  .no-touch .my-gallery figure:hover .works-link .picture::after {
+    -webkit-transform: scale(1.18);
+    -moz-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    transform: scale(1.18);
+  }
+}
+
+.pswp__caption__center h4 {
+  font: normal 600 2rem/1.1 "HelveticaNeueLight", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--white);
+}
+
+.pswp__caption__center h4 small {
+  display: block;
+  margin-top: 0.6rem;
+  font: italic 400 1.8rem/1.7 "HelveticaNeueLight", serif;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--cinza-light);
+}
+
+.pswp__caption__center p {
+  margin-top: 0.8rem;
+  font: normal 300 1.4rem/1.7 "HelveticaNeueLight", sans-serif;
+  color: var(--cinza-light);
+}
+
+.pswp__counter {
+  font-family: "HelveticaNeueLight", sans-serif;
+}
+
+.pswp__button--close {
+  opacity: 1;
+}
+
+.pswp__button--arrow--left::before,
+.pswp__button--arrow--right::before {
+  width: 44px;
+  height: 44px;
+}
+
+.pswp__button--arrow--left:before {
+  left: 0;
+  background-position: -132px -44px;
+}
+
+.pswp__button--arrow--right:before {
+  right: 0;
+  background-position: -88px -44px;
+}
+
+.pswp__caption__center {
+  text-align: center;
+}
+
+.pswp__caption__center h4 {
+  color: var(--white);
+}
+
+.pswp__caption__center h4 small {
+  color: var(--cinza-light);
+}
+
+.pswp__caption__center p {
+  color: var(--cinza-light);
+}
+
+.pswp__bg {
+  background: var(--cinza-dark);
+}
+
+.pswp__caption,
+.pswp__top-bar {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.pswp__button--close {
+  background-color: var(--cinza-dark);
+}

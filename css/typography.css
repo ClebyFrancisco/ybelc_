@@ -1,0 +1,231 @@
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url("../fonts/Helvetica\ Neue\ LTW0697BlkCnObl.otf") format("opentype"),
+    url("fonts/Helvetica\ Neue\ LTW0697BlkCnObl.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeueMedium";
+  src: url("fonts/Helvetica\ Neue\ Medium\ Extended.otf") format("opentype"),
+    url("fonts/Helvetica\ Neue\ Medium\ Extended.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "HelveticaNeuelight";
+  src: url("fonts/Helvetica\ Neue\ UltraLight.otf") format("opentype"),
+    url("fonts/Helvetica\ Neue\ UltraLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font: normal 600 4rem/1 "HelveticaNeueMedium", Helvetica, sans-serif;
+
+  color: var(--cinza-dark);
+  margin-top: 2rem;
+}
+
+h1.light {
+  color: var(--white);
+}
+h1::after {
+  content: "|";
+  opacity: 1;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+}
+
+.headline__text {
+  color: #050A30;
+  padding-left: 0.2rem;
+  margin-top: 1.8rem;
+  max-width: 500px;
+  font-size: 1.4rem;
+}
+
+.headline__text.light {
+  color: var(--cinza-light);
+}
+
+@media only screen and (min-width: 576px) {
+  .headline__text {
+    font-size: 1.6rem;
+  }
+}
+
+.headline__btnholder {
+  padding-left: 0.2rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font: normal 600 4rem/1 "HelveticaNeueMedium", Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #050A30;
+  margin-top: 2rem;
+}
+
+h2.light {
+  color: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 5rem;
+  }
+}
+
+.section-title__subtitle {
+  font: 600 2.8rem/1.2 "HelveticaNeueMedium", Helvetica, sans-serif;
+  color: var(--cinza-light);
+}
+
+.section-title__text {
+  margin-top: 1.8rem;
+  padding-left: 0.2rem;
+}
+
+h3 {
+  font: normal 600 2.2rem/1.2 "HelveticaNeueMedium", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--cinza-dark);
+}
+
+h3 small {
+  display: block;
+  font: 400 1.8rem/1.5 "HelveticaNeueMedium", Helvetica, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--cinza-medium);
+}
+
+h3.light {
+  color: var(--white);
+}
+
+h3.light small {
+  color: var(--cinza-light);
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--cinza-dark);
+  text-align: center;
+}
+
+h4 small {
+  display: block;
+  margin-top: 0.6rem;
+  font: 400 1.8rem/1.5 "HelveticaNeueMedium", Helvetica, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+h5 {
+  font: normal 600 1.6rem/1.1 "HelveticaNeueMedium", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--cinza-dark);
+}
+
+h5.light {
+  color: var(--white);
+}
+
+p {
+  font: normal 400 1.6rem/1.7 "HelveticaNeueLight", Helvetica, sans-serif;
+}
+
+p span {
+  font-weight: 600;
+}
+
+a {
+  font: normal 400 1.6rem/1.7 "HelveticaNeueLight", Helvetica, sans-serif;
+}
+
+.image-caption {
+  text-align: right;
+}
+
+.image-caption p {
+  font: normal 700 2rem/1.2 "HelveticaNeueLight", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--white);
+}
+
+.image-caption p span {
+  display: block;
+  font: 400 1.8rem/1.5 "HelveticaNeueLight", Helvetica, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+  color: var(--white);
+}
+
+.contact-data__item p {
+  font: normal 400 1.4rem/1.7 "HelveticaNeueLight", Helvetica, sans-serif;
+  margin-top: 0.4rem;
+}
+
+.contact-data__item ul {
+  margin-top: 0.4rem;
+}
+
+.contact-data__item a {
+  display: block;
+  position: relative;
+  font: normal 400 1.4rem/1.7 "HelveticaNeueLight", Helvetica, sans-serif;
+}
+
+.contact-data__item a:hover {
+  color: var(--blue);
+}
+
+.popup-title__subtitle {
+  display: block;
+  font: 600 2.8rem/1.2 "HelveticaNeueLight", Helvetica, sans-serif;
+  color: var(--cinza-medium);
+  background: var(--cinza-medium);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-left: 0.2rem;
+}
+
+.popup-title__title {
+  margin-top: 1.6rem;
+  font: normal 600 4rem/1 "HelveticaNeueLight", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: var(--cinza-dark);
+}
+
+.popup-title__title.light {
+  color: var(--white);
+}
+
+.popup-title__text {
+  margin-top: 1.4rem;
+  max-width: 500px;
+  padding-left: 0.2rem;
+}
