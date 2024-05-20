@@ -6,6 +6,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-BH5W02L5XH"
     ></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -17,6 +18,10 @@
     </script>
     <meta charset="utf-8" />
     <title>Ybelc - Research, development & Security</title>
+    <script
+      src="https://kit.fontawesome.com/7a1ff39f63.js"
+      crossorigin="anonymous"
+    ></script>
     <meta
       name="description"
       content="We are a team passionate about research, development and innovation, with the purpose of bringing to life, innovative technologies and solutions, and enhancing existing technologies and solutions with continuous innovation. We bring together creativity, design thinking and technology to deliver and promote the innovation needed to take an organization to the next level."
@@ -32,112 +37,468 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
     <link
-      href="//cdn-images.mailchimp.com/embedcode/slim-10_7_dtp.css"
-      rel="stylesheet"
-      type="text/css"
+      rel="shortcut icon"
+      href="./img/Ybelc-light-removebg.png"
+      type="image/x-icon"
     />
-    <link rel="shortcut icon" href="./img/Ybelc-dark.png" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/plugins.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/loaders/loader-light.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/animation.css" />
-    <link rel="stylesheet" type="text/css" href="css/buttonTriggers.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="css/menu.css" />
-    <link rel="stylesheet" type="text/css" href="css/scroll.css" />
-    <link rel="stylesheet" type="text/css" href="css/skillbars.css" />
-    <link rel="stylesheet" type="text/css" href="css/typography.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/plugins.css" /> -->
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+      }
+
+      .container {
+        width: 80% !important;
+        max-width: 1440px;
+        margin: 0 auto !important;
+      }
+
+      .header {
+        height: 500px;
+        width: 100%;
+        background-image: url("./img/home-bg.jpg");
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .container h1 {
+          color: white;
+          font-weight: 600;
+          font-size: 72px;
+          text-align: center;
+        }
+
+        @media screen and (max-width: 480px) {
+          height: 300px;
+        }
+      }
+
+      .logo {
+        position: absolute;
+        top: 0;
+        width: 80% !important;
+        max-width: 1440px;
+        margin: 0 auto !important;
+
+        img {
+          width: 150px;
+          height: 150px;
+        }
+
+        @media screen and (max-width: 480px) {
+          height: 300px;
+
+          img {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+
+      #particles-js {
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          height: 300px;
+        }
+      }
+
+      #particles-js h1 {
+        font-family: "HelveticaNeueMedium", Helvetica, sans-serif;
+        position: absolute;
+        pointer-events: none;
+        font-weight: bold;
+        font-size: 4vw;
+        color: rgb(208, 255, 0);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .about {
+        /* background-color: #000314 !important; */
+        position: relative;
+        padding-top: 50px;
+
+        .live {
+          background-image: url(./img/live.png);
+          background-size: contain;
+          border-radius: 25px;
+          width: 150px;
+          height: 50px;
+          position: absolute;
+          top: -25px;
+
+          @media screen and (max-width: 480px) {
+            border-radius: 12.5px;
+            width: 75px;
+            height: 25px;
+            position: absolute;
+            top: -12.5px;
+          }
+        }
+
+        h2 {
+          color: rgb(208, 255, 0);
+          font-size: 5vh;
+          font-weight: 600;
+          text-align: center;
+
+          @media screen and (max-width: 480px) {
+            font-size: 3vh;
+          }
+        }
+
+        h3 {
+          color: white;
+          font-size: 3vh;
+          font-weight: 600;
+          text-align: center;
+        }
+
+        .about-desc {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 200px !important;
+          padding: 0;
+
+          @media screen and (max-width: 550px) {
+            height: auto !important;
+            flex-direction: column;
+          }
+        }
+      }
+
+      .call-to-action {
+        background-color: #ffa500;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+        width: 100%;
+        padding: 20px;
+        margin: 20px;
+        border: none;
+        border-radius: 25px;
+      }
+
+      .call-to-action:hover {
+        background-color: #b47406;
+        color: white;
+      }
+
+      .action {
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        width: 80%;
+        padding: 10px;
+        margin: 20px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .action:hover {
+        background-color: #b47406;
+      }
+
+      .info {
+        width: 100%;
+        height: auto;
+
+        .info-content {
+          opacity: 1;
+          display: flex;
+        }
+
+        .info-content-card {
+          width: 50%;
+        }
+
+        .info-content-text {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          i {
+            color: aqua;
+          }
+
+          p {
+            font-weight: bold;
+          }
+        }
+
+        @media screen and (max-width: 900px) {
+          .info-content {
+            flex-direction: column;
+          }
+
+          .info-content-card {
+            width: 100%;
+          }
+
+          .info-content-text {
+            width: 100%;
+          }
+        }
+      }
+
+      .ybmain2 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .card {
+        width: 30%;
+        background-color: rgba(255, 251, 1, 0.123);
+        padding: 30px;
+        margin: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ybmain2-5 {
+        display: flex;
+      }
+
+      .ybmain5,
+      .ybmain6 {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .investiment {
+        width: 100%;
+        height: auto;
+
+        .card-investiment {
+          background-color: rgb(255, 255, 255);
+          color: gray;
+          font-size: 16px;
+          border-radius: 25px;
+          width: 100%;
+          height: auto;
+          padding: 20px;
+          margin: 20px;
+
+          display: flex;
+
+          h5 {
+            text-transform: uppercase;
+            color: black;
+          }
+
+          .card-investiment-info {
+            width: 30%;
+          }
+
+          b {
+            color: black;
+          }
+
+          .price {
+            font-size: 48px;
+          }
+
+          .info-descont {
+            border: 1px solid red;
+            padding: 5px;
+            color: red;
+          }
+
+          .card-investiment-info2 {
+            width: 70%;
+            color: rgb(65, 65, 65);
+          }
+        }
+      }
+
+      .footer {
+        width: 100%;
+        height: 100px;
+        background-image: url("./img/home-bg.jpg");
+        background-size: cover;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @media screen and (max-width: 480px) {
+          height: 200px;
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
 
-  <body class="split light-skin overflow-hidden">
-    <div class="loader">
-      <div class="loader-content">
-        <div class="loader-logo fadeIn">
-          <img src="./img/Ybelc-dark.png" alt="Ybelc" />
-
-          <p>Research, Development & Security</p>
-        </div>
-      </div>
-    </div>
-
-    <section id="main" class="main-section">
-      <div class="main-background-objects">
-        <div class="objects-layer">
-          <div class="main-obj-1"></div>
-          <div class="main-obj-2"></div>
-        </div>
-      </div>
+  <body>
+    <header class="header">
       <div class="logo">
-        <img
-          id="logo"
-          style="width: 80px"
-          src="./img/Ybelc-light.png"
-          alt="Ybelc - Research, Development & Security"
-        />
+        <img src="./img/Ybelc-dark-removebg.png" alt="Ybelc Tecnologia" />
       </div>
-      <div class="main-section__content">
-        <div class="container-fluid p-0 fullheight">
-          <div class="row no-gutters fullheight">
-            <div class="col-12 col-lg-6 main-section__intro">
-              <div class="intro-content">
-                <div id="headline" class="headline">
-                  <h2 id="tt">A New Beginning Is Coming.</h2>
-                  <p class="headline__text">
-                    We are preparing something incredible and exciting for you.
-                    A new world, The world powered by technology, bringing
-                    innovative solutions. Wait for us...
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-6 main-section__media">
-              <div class="media-content">
-                <div class="media-image"></div>
+      <div class="container" id="particles-js">
+        <h1>Formação em Inteligência Artificial e Ciência de Dados</h1>
+      </div>
+    </header>
+    <section class="about">
+      <div class="container">
+        <div class="live"></div>
+        <h2>
+          🚀 Desbloqueie seu potencial com nosso Curso Online de Formação em
+          Inteligência Artificial e Ciência de Dados! 🌟
+        </h2>
 
-                <div class="color-layer color-layer-quicksand"></div>
-
-                <div id="particles-js">
-                  <h1 id="textTyperwrite">Research</h1>
-                </div>
-
-                <div class="color-layer gradient-layer"></div>
-              </div>
-            </div>
+        <h3>
+          Você está pronto para entrar no emocionante mundo da Inteligência
+          Artificial e Ciência de Dados?
+        </h3>
+        <div class="about-desc">
+          <img width="200px" src="./img/ia.png" alt="inteligencia Artificial" />
+          <div class="about-text">
+            Dê as boas-vindas ao curso que irá revolucionar sua carreira e abrir
+            as portas para infinitas oportunidades no mundo da tecnologia e da
+            análise de dados! Nosso Curso Online de Formação em Inteligência
+            Artificial e Ciência de Dados é uma jornada emocionante, projetada
+            para capacitá-lo com as habilidades mais procuradas no mercado
+            atual.
           </div>
         </div>
+        <button
+          class="call-to-action"
+          onclick="() => {
+          var nextSection = document.getElementById('investiment'); 
+            nextSection.scrollIntoView({ behavior: 'smooth' });
+        }"
+        >
+          Estou pronto para impulsionar minha carreira!
+        </button>
       </div>
-      <aside class="main-section__aside">
-        <div class="aside-content">
-          <div class="socials dark">
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedin.com/company/ybelc-tech"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ybelc_tech/" target="_blank"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </aside>
     </section>
+
+    <section class="info">
+      <div class="container info-content">
+        <div class="info-content-card">
+          <div class="ybmain5">
+            <div class="card">
+              <img src="./img/python-logo.png" alt="python" width="100px" />
+            </div>
+            <div class="card">
+              <img
+                src="./img/estatistica-icon.png"
+                alt="Estatística"
+                width="100px"
+              />
+            </div>
+          </div>
+          <div class="ybmain6">
+            <div class="card">
+              <img
+                src="./img/database.png"
+                alt="Banco de dados"
+                width="100px"
+              />
+            </div>
+            <div class="card">
+              <img
+                src="./img/decision.png"
+                alt="Machine Leaning"
+                width="100px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="info-content-text">
+          <p>
+            <i class="fa-solid fa-diamond"></i> Python para Análise de Dados:
+            Domine uma das linguagens de programação mais poderosas e populares
+            para manipulação de dados, visualização e desenvolvimento de
+            algoritmos de IA.
+          </p>
+          <p>
+            <i class="fa-solid fa-diamond"></i> Estatística Aplicada: Desenvolva
+            uma compreensão sólida dos princípios estatísticos fundamentais e
+            aprenda a aplicá-los na análise e interpretação de dados.
+          </p>
+          <p>
+            <i class="fa-solid fa-diamond"></i> Banco de Dados Avançado: Aprenda
+            a gerenciar grandes conjuntos de dados de forma eficiente e descubra
+            como utilizar sistemas de banco de dados modernos para armazenamento
+            e recuperação de informações.
+          </p>
+          <p>
+            <i class="fa-solid fa-diamond"></i> Machine Learning e Deep
+            Learning: Explore o fascinante mundo do aprendizado de máquina e das
+            redes neurais profundas, aprendendo a construir modelos preditivos e
+            sistemas inteligentes.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="investiment" class="investiment">
+      <div class="container card-investiment">
+        <div class="card-investiment-info">
+          <h5>Pagamento parcelado ou à vista</h5>
+          <br />
+          De <s>R$ 600,00</s> <span class="info-descont">40% off</span><br />
+          <br />
+          Por 12 x <b class="price">R$ 36,15</b><br />
+          à vista <b>R$ 360,00</b> <br />
+        </div>
+        <div class="card-investiment-info2">
+          Realize sua matrícula de forma rápida e sem burocracia e ainda ganhe
+          40% de desconto! <br />
+          <br />
+          <i class="fa-solid fa-check"></i> Matrícula sem burocracia e condições
+          especiais. <br />
+          <i class="fa-solid fa-check"></i> Parcelamento em até 12 vezes R$
+          36,15 (apenas no cartão de crédito).<br />
+          <i class="fa-solid fa-check"></i> Pagamento à vista via cartão, boleto
+          ou PIX. <br />
+          <i class="fa-solid fa-check"></i> Cancelamento grátis em até 7 dias.
+
+          <button
+            class="action"
+            onclick="window.location.href='https://pay.kiwify.com.br/BduJKH7?coupon=EUVOU40';"
+          >
+            <i class="fa-solid fa-cart-shopping" style="margin-right: 10px"></i
+            >Realizar Matrícula
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        Copyright 2024 © Ybelc Tecnologia da informação 47.336.274/0001-10 –
+        Todos os Direitos Reservados
+      </div>
+    </footer>
 
     <script src="js/libs.min.js"></script>
     <script src="js/script.js"></script>

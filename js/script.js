@@ -529,7 +529,10 @@ $(function () {
 });
 
 document.addEventListener("DOMContentLoaded", function (event) {
-  var dataText = ["Research ", "   Development ", "Security "];
+  var dataText = [
+    "Formação em Inteligência Artificial  ",
+    "Ciência de Dados ",
+  ];
 
   function typeWriter(text, i, fnCallback) {
     if (i < text.length) {
